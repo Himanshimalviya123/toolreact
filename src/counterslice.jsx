@@ -1,4 +1,4 @@
-// \\\\\\\\\\\\\\\increment /decrement   program \\\\\\\\\\\\\\\\\\\\\\\\\
+// \\\\\\\\\\\\\\\increment /decrement   program \\(counterslice.jsx),(store.jsx),(main.jsx,app.jsx)\\\\\\\\\\\\\\\\\\\\\\\
 
 // import { createSlice } from "@reduxjs/toolkit";
 // const Counterslice=createSlice({
