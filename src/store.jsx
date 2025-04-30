@@ -32,7 +32,8 @@
 //     }
 // })
 // export default Store;
-// \\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  // \\\\\\\\\\\\\\\\\\\\\\( pay load )\\(addtask)\\(app.jsx,todoslice.jsx,store.jsx)\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
 import { configureStore } from "@reduxjs/toolkit";
 import todoreducer from "./todoslice";
 const Store=configureStore({

@@ -52,7 +52,8 @@
 //     )
 //   }
 //   export default App;
-  // \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  // \\\\\\\\\\\\\\\\\\\\\\( pay load )\\(addtask)\\(app.jsx,todoslice.jsx,store.jsx)\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
   import { useDispatch, useSelector } from "react-redux";
  import {addtask} from "./todoslice";
  import { useState } from "react";
