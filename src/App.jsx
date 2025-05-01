@@ -54,43 +54,91 @@
 //   export default App;
   // \\\\\\\\\\\\\\\\\\\\\\( pay load )\\(addtask)\\(app.jsx,todoslice.jsx,store.jsx)\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-  import { useDispatch, useSelector } from "react-redux";
- import {addtask} from "./todoslice";
- import { useState } from "react";
-const App=()=>{
-    const work=useSelector(state=>state.todo.task);
-    const dispatch=useDispatch();
+//   import { useDispatch, useSelector } from "react-redux";
+//  import {addtask} from "./todoslice";
+//  import { useState } from "react";
+// const App=()=>{
+//     const work=useSelector(state=>state.todo.task);
+//     const dispatch=useDispatch();
 
-    const [val,setVal]=useState("");
-    console.log(work);
-    let sno=0;
-    const ans=work.map((key)=>{
-      sno++;
-      return(
-        <>
-        <tr>
-          <td>{sno}</td>
-          <td>{key.task}</td>
-        </tr>
-        </>
-      )
-    })
+//     const [val,setVal]=useState("");
+//     console.log(work);
+//     let sno=0;
+//     const ans=work.map((key)=>{
+//       sno++;
+//       return(
+//         <>
+//         <tr>
+//           <td>{sno}</td>
+//           <td>{key.task}</td>
+//         </tr>
+//         </>
+//       )
+//     })
     
-    return(
-      <>
-      <h1>todo program</h1>
-      <h1>enter work:<input type="text" value={val}
-      onChange={(e)=>{setVal(e.target.value)}}/></h1>
-      <button onClick={()=>{dispatch(addtask({task:val}))}}>add</button>
-      <hr/>
-    <table>
-      <tr>
-        <th>#</th>
-        <th></th>
-      </tr>
-      {ans}
-    </table>
-      </>
-    )
-  }
-  export default App;
+//     return(
+//       <>
+//       <h1>todo program</h1>
+//       <h1>enter work:<input type="text" value={val}
+//       onChange={(e)=>{setVal(e.target.value)}}/></h1>
+//       <button onClick={()=>{dispatch(addtask({task:val}))}}>add</button>
+//       <hr/>
+//     <table border="5px" width="300px" >
+//       <tr>
+//         <th>s.no</th>
+//         <th>data</th>
+//       </tr>
+//       {ans}
+//     </table>
+//       </>
+//     )
+//   }
+//   export default App;
+// \\\\\\\\\\\\\\\\\\\\\(todo app)\\\\\\\\\\\\\\\\
+
+import { useDispatch, useSelector } from "react-redux";
+import {addtask ,removetask ,  remByIndex} from "./todoslice";
+import { useState } from "react";
+const App=()=>{
+   const data=useSelector(state=>state.todo.task);
+   const dispatch=useDispatch();
+
+   const [val,setVal]=useState("");
+   console.log(data);
+   let sno=0;
+   const ans=data.map((key,index)=>{
+     sno++;
+     return(
+       <>
+       <tr>
+         <td>{sno}</td>
+         <td>{key.work}</td>
+         <td><button onClick={()=>{dispatch(removetask({id:key.id}))}}>delete</button></td>
+         <td><button onClick={()=>{dispatch( remByIndex({id:index}))}}>del</button></td>
+
+       </tr>
+    
+       </>
+     )
+   })
+   
+   return(
+     <>
+     <h1>todo program</h1>
+     <h1>enter your task:<input type="text" value={val}
+     onChange={(e)=>{setVal(e.target.value)}}/></h1>
+     <button onClick={()=>{dispatch(addtask({id:Date.now(),work:val}))}}>add</button>
+     <hr/>
+   <table border="2" width="200px">
+     <tr>
+       <th>s.no</th>
+       <th>your work</th>
+       <th>delete</th>
+       <th>del</th>
+     </tr>
+     {ans}
+   </table>
+     </>
+   )
+ }
+ export default App;
