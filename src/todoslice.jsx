@@ -16,7 +16,7 @@
 // })
 // export const  {addtask}=todoslice.actions;
 // export default todoslice.reducer;
-// \\\\\\\\\\\\\\\\\\\\(todo app)\\\\\\\\\\\\\\\\
+// \\\\\\\\\\\\\\\\\\\\(todo app)\\\\\(app.jsx,todoslice.jsx,store.jsx,main.jsx)\\\\\\\\\\\
 import { createSlice } from "@reduxjs/toolkit";
 const todoslice=createSlice({
     name:"todo",

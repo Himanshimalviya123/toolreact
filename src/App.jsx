@@ -94,7 +94,7 @@
 //     )
 //   }
 //   export default App;
-// \\\\\\\\\\\\\\\\\\\\\(todo app)\\\\\\\\\\\\\\\\
+// \\\\\\\\\\\\\\\\\\\\\(todo app)\\(app.jsx,todoslice.jsx,store.jsx,main.jsx)\\\\\\\\\\\\\\
 
 import { useDispatch, useSelector } from "react-redux";
 import {addtask ,removetask ,  remByIndex} from "./todoslice";

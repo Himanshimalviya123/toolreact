@@ -44,7 +44,7 @@
 //     }
 // })
 // export default Store;
-// \\\\\\\\\\\\\\\\\\\\\\\(todo app)\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// \\\\\\\\\\\\\\\\\\\\\\\(todo app)\\\\(app.jsx,todoslice.jsx,store.jsx,main.jsx)\\\\\\\\\\\\\\\\\\\\\\\\\\\
 import { configureStore } from "@reduxjs/toolkit";
 import todoreducer from "./todoslice";
 const Store=configureStore({
