@@ -142,7 +142,8 @@
 //    )
 //  }
 //  export default App;
-// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// \\\\\\\\\\\\\\\\\(delete,complete,incomplete,edit)\\\\(todo app)\\(app.jsx,todoslice.jsx,store.jsx,main.jsx)\\\\\\\\\\\\\\
+
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {addTask,RemoveTask,taskComplete,taskInComplete,myEditSave,} from"./todoslice";

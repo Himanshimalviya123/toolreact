@@ -41,7 +41,7 @@
 // })
 // export const  {addtask,removetask, remByIndex}=todoslice.actions;
 // export default todoslice.reducer;
-// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// \\\\\\\\\\\\\\\\\(delete,complete,incomplete,edit)\\\\(todo app)\\(app.jsx,todoslice.jsx,store.jsx,main.jsx)\\\\\\\\\\\\\\
 
 import { createSlice } from "@reduxjs/toolkit";
 

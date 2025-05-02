@@ -45,6 +45,18 @@
 // })
 // export default Store;
 // \\\\\\\\\\\\\\\\\(delete,del)\\\\(todo app)\\(app.jsx,todoslice.jsx,store.jsx,main.jsx)\\\\\\\\\\\\\\
+// import { configureStore } from "@reduxjs/toolkit";
+// import todoreducer from "./todoslice";
+// const Store=configureStore({
+//     reducer:{
+//         //your reducer goes here
+//     todo:todoreducer
+
+//     }
+// })
+// export default Store;
+// \\\\\\\\\\\\\\\\\(delete,complete,incomplete,edit)\\\\(todo app)\\(app.jsx,todoslice.jsx,store.jsx,main.jsx)\\\\\\\\\\\\\\
+
 import { configureStore } from "@reduxjs/toolkit";
 import todoreducer from "./todoslice";
 const Store=configureStore({
